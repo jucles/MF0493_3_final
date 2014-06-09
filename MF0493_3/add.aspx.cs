@@ -98,6 +98,7 @@ namespace MF0493_3
                 emp.nif = this.txtDni.Text;
                 emp.nombre = this.txtNombre.Text;
                 emp.poblacion = this.txtPoblacion.Text;
+                emp.email = this.txtEmail.Text;
                 emp.telefono = this.txtTlf.Text;
                 emp.usr = ((Usuario)Session["usr"]).username;
                 emp.ff = Convert.ToDateTime(this.txtFnac.Text);

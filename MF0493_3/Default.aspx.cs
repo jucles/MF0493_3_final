@@ -29,5 +29,12 @@ namespace MF0493_3
             Session.Add("empresa", dato);
             Response.Redirect("edit.aspx");
         }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow r = this.GridView1.Rows[e.RowIndex];
+            EmpresaManager.Eliminar(r.Cells[0].Text);
+            Response.Redirect("default.aspx");
+        }
     }
 }

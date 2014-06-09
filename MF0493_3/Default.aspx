@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="zona1" runat="server">
     <h1>Listado de empresas</h1>
         
-    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hovered" GridLines="None" AutoGenerateColumns="False" OnRowEditing="GridView1_RowEditing">
+    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hovered" GridLines="None" AutoGenerateColumns="False" OnRowEditing="GridView1_RowEditing" OnRowDeleting="GridView1_RowDeleting">
         <Columns>
             <asp:BoundField DataField="nif" HeaderText="N.I.F.">
             <ItemStyle Width="100px" />
